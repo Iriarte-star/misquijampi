@@ -72,7 +72,7 @@ export default function App() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 "
-                        src="./public/logo.png"
+                        src="logo.png"
                         alt=""
                       />
                     </Menu.Button>

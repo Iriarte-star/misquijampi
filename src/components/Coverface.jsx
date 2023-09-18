@@ -6,7 +6,7 @@ import { BiLogoTiktok } from "react-icons/bi";
 
 const Coverface = ()=> {
   const paisaje = {
-    backgroundImage: "url('./public/portada.png')"
+    backgroundImage: "url('portada.png')"
   }
     return(
         <section className="bg-cover w-full h-full " style={paisaje} >

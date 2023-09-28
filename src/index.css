@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary-dark: #ddb505;
+    --primary-light: #e6c824;
+    background-color:#11283c;
+
+}
+
+@layer base {
+    html{
+        @apply scroll-smooth
+    }
+    body{
+        @apply  font-mono
+    }
+    li{
+        @apply p-4 text-sm
+    }
+
+    button{
+        @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white
+    }
+    h2 {
+        @apply text-xl font-bold
+    }
+}

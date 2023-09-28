@@ -1,28 +1,27 @@
-import Navbar from "./components/Navbar"
-import CoverFace from "./components/Coverface"
-import ProjectsList from "./components/ProjectsList";
-import projectsData from "./components/projectsData";
-import People from "./components/People";
-import CalendarEvent from "./components/CalendarEvent";
 
+import TopBar from "./components/TopBar"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Activities from "./components/Activities";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Deals from "./components/Deals";
 
 const App=()=> {
   return (
 <>
+    <TopBar/>
     <Navbar/>
-    <CoverFace/>
-    <div className="flex justify-center items-center h-screen bg-slate-200  ">
-      <ProjectsList projects = {projectsData}/>
-    </div>
-  
-    <People/>
-    
-    <div className="flex justify-center items-center h-screen bg-slate-200 ">
-      <CalendarEvent/>
-    </div>
+    <Hero/>
+    <Activities/>
+    <Gallery/>
+    <Deals/>
+    <Contact/>
+    <Footer/>
 </>
 
   )
 }
 
-export default App
+export default App;
